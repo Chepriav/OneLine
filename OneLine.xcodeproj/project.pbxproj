@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC7581C12F58B1E9001F7DC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DC7581C02F58B1E9001F7DC0 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DC6FA3D62F4C7C8500DCEE26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +28,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC6FA3C62F4C7C8400DCEE26 /* Daily micro-Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily micro-Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6FA3D52F4C7C8500DCEE26 /* Daily micro-JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily micro-JournalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6FA3DF2F4C7C8500DCEE26 /* Daily micro-JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily micro-JournalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6FA3C62F4C7C8400DCEE26 /* OneLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6FA3D52F4C7C8500DCEE26 /* OneLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6FA3DF2F4C7C8500DCEE26 /* OneLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7581C02F58B1E9001F7DC0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DC6FA3C82F4C7C8400DCEE26 /* Daily micro-Journal */ = {
+		DC6FA3C82F4C7C8400DCEE26 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Daily micro-Journal";
+			path = App;
 			sourceTree = "<group>";
 		};
-		DC6FA3D82F4C7C8500DCEE26 /* Daily micro-JournalTests */ = {
+		DC6FA3D82F4C7C8500DCEE26 /* OneLineTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Daily micro-JournalTests";
+			path = OneLineTests;
 			sourceTree = "<group>";
 		};
-		DC6FA3E22F4C7C8500DCEE26 /* Daily micro-JournalUITests */ = {
+		DC6FA3E22F4C7C8500DCEE26 /* OneLineUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Daily micro-JournalUITests";
+			path = OneLineUITests;
+			sourceTree = "<group>";
+		};
+		DC6FA4182F4DA39500DCEE26 /* Presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC6FA41B2F4DA3AB00DCEE26 /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DC6FA4202F4DA3D900DCEE26 /* DesignSystem */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		DC6FA4212F4DA63E00DCEE26 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DC6FA4502F4EF4AB00DCEE26 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +105,15 @@
 		DC6FA3BD2F4C7C8400DCEE26 = {
 			isa = PBXGroup;
 			children = (
-				DC6FA3C82F4C7C8400DCEE26 /* Daily micro-Journal */,
-				DC6FA3D82F4C7C8500DCEE26 /* Daily micro-JournalTests */,
-				DC6FA3E22F4C7C8500DCEE26 /* Daily micro-JournalUITests */,
+				DC7581C02F58B1E9001F7DC0 /* .gitignore */,
+				DC6FA4502F4EF4AB00DCEE26 /* Resources */,
+				DC6FA3C82F4C7C8400DCEE26 /* App */,
+				DC6FA41B2F4DA3AB00DCEE26 /* Domain */,
+				DC6FA4212F4DA63E00DCEE26 /* Data */,
+				DC6FA4182F4DA39500DCEE26 /* Presentation */,
+				DC6FA4202F4DA3D900DCEE26 /* DesignSystem */,
+				DC6FA3D82F4C7C8500DCEE26 /* OneLineTests */,
+				DC6FA3E22F4C7C8500DCEE26 /* OneLineUITests */,
 				DC6FA3C72F4C7C8400DCEE26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +121,9 @@
 		DC6FA3C72F4C7C8400DCEE26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC6FA3C62F4C7C8400DCEE26 /* Daily micro-Journal.app */,
-				DC6FA3D52F4C7C8500DCEE26 /* Daily micro-JournalTests.xctest */,
-				DC6FA3DF2F4C7C8500DCEE26 /* Daily micro-JournalUITests.xctest */,
+				DC6FA3C62F4C7C8400DCEE26 /* OneLine.app */,
+				DC6FA3D52F4C7C8500DCEE26 /* OneLineTests.xctest */,
+				DC6FA3DF2F4C7C8500DCEE26 /* OneLineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC6FA3C52F4C7C8400DCEE26 /* Daily micro-Journal */ = {
+		DC6FA3C52F4C7C8400DCEE26 /* OneLine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6FA3E92F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-Journal" */;
+			buildConfigurationList = DC6FA3E92F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLine" */;
 			buildPhases = (
 				DC6FA3C22F4C7C8400DCEE26 /* Sources */,
 				DC6FA3C32F4C7C8400DCEE26 /* Frameworks */,
@@ -108,18 +144,23 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DC6FA3C82F4C7C8400DCEE26 /* Daily micro-Journal */,
+				DC6FA3C82F4C7C8400DCEE26 /* App */,
+				DC6FA4182F4DA39500DCEE26 /* Presentation */,
+				DC6FA41B2F4DA3AB00DCEE26 /* Domain */,
+				DC6FA4202F4DA3D900DCEE26 /* DesignSystem */,
+				DC6FA4212F4DA63E00DCEE26 /* Data */,
+				DC6FA4502F4EF4AB00DCEE26 /* Resources */,
 			);
-			name = "Daily micro-Journal";
+			name = OneLine;
 			packageProductDependencies = (
 			);
 			productName = "Daily micro-Journal";
-			productReference = DC6FA3C62F4C7C8400DCEE26 /* Daily micro-Journal.app */;
+			productReference = DC6FA3C62F4C7C8400DCEE26 /* OneLine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC6FA3D42F4C7C8500DCEE26 /* Daily micro-JournalTests */ = {
+		DC6FA3D42F4C7C8500DCEE26 /* OneLineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6FA3EC2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-JournalTests" */;
+			buildConfigurationList = DC6FA3EC2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLineTests" */;
 			buildPhases = (
 				DC6FA3D12F4C7C8500DCEE26 /* Sources */,
 				DC6FA3D22F4C7C8500DCEE26 /* Frameworks */,
@@ -131,18 +172,18 @@
 				DC6FA3D72F4C7C8500DCEE26 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DC6FA3D82F4C7C8500DCEE26 /* Daily micro-JournalTests */,
+				DC6FA3D82F4C7C8500DCEE26 /* OneLineTests */,
 			);
-			name = "Daily micro-JournalTests";
+			name = OneLineTests;
 			packageProductDependencies = (
 			);
 			productName = "Daily micro-JournalTests";
-			productReference = DC6FA3D52F4C7C8500DCEE26 /* Daily micro-JournalTests.xctest */;
+			productReference = DC6FA3D52F4C7C8500DCEE26 /* OneLineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC6FA3DE2F4C7C8500DCEE26 /* Daily micro-JournalUITests */ = {
+		DC6FA3DE2F4C7C8500DCEE26 /* OneLineUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6FA3EF2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-JournalUITests" */;
+			buildConfigurationList = DC6FA3EF2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLineUITests" */;
 			buildPhases = (
 				DC6FA3DB2F4C7C8500DCEE26 /* Sources */,
 				DC6FA3DC2F4C7C8500DCEE26 /* Frameworks */,
@@ -154,13 +195,13 @@
 				DC6FA3E12F4C7C8500DCEE26 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DC6FA3E22F4C7C8500DCEE26 /* Daily micro-JournalUITests */,
+				DC6FA3E22F4C7C8500DCEE26 /* OneLineUITests */,
 			);
-			name = "Daily micro-JournalUITests";
+			name = OneLineUITests;
 			packageProductDependencies = (
 			);
 			productName = "Daily micro-JournalUITests";
-			productReference = DC6FA3DF2F4C7C8500DCEE26 /* Daily micro-JournalUITests.xctest */;
+			productReference = DC6FA3DF2F4C7C8500DCEE26 /* OneLineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,12 +227,13 @@
 					};
 				};
 			};
-			buildConfigurationList = DC6FA3C12F4C7C8400DCEE26 /* Build configuration list for PBXProject "Daily micro-Journal" */;
+			buildConfigurationList = DC6FA3C12F4C7C8400DCEE26 /* Build configuration list for PBXProject "OneLine" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = DC6FA3BD2F4C7C8400DCEE26;
 			minimizedProjectReferenceProxies = 1;
@@ -200,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC6FA3C52F4C7C8400DCEE26 /* Daily micro-Journal */,
-				DC6FA3D42F4C7C8500DCEE26 /* Daily micro-JournalTests */,
-				DC6FA3DE2F4C7C8500DCEE26 /* Daily micro-JournalUITests */,
+				DC6FA3C52F4C7C8400DCEE26 /* OneLine */,
+				DC6FA3D42F4C7C8500DCEE26 /* OneLineTests */,
+				DC6FA3DE2F4C7C8500DCEE26 /* OneLineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7581C12F58B1E9001F7DC0 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		DC6FA3D72F4C7C8500DCEE26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC6FA3C52F4C7C8400DCEE26 /* Daily micro-Journal */;
+			target = DC6FA3C52F4C7C8400DCEE26 /* OneLine */;
 			targetProxy = DC6FA3D62F4C7C8500DCEE26 /* PBXContainerItemProxy */;
 		};
 		DC6FA3E12F4C7C8500DCEE26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC6FA3C52F4C7C8400DCEE26 /* Daily micro-Journal */;
+			target = DC6FA3C52F4C7C8400DCEE26 /* OneLine */;
 			targetProxy = DC6FA3E02F4C7C8500DCEE26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,6 +371,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +428,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -397,6 +442,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "One Line";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Charly.Daily-micro-Journal";
+				PRODUCT_BUNDLE_IDENTIFIER = charly.oneline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -428,6 +475,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "One Line";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Charly.Daily-micro-Journal";
+				PRODUCT_BUNDLE_IDENTIFIER = charly.oneline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -467,7 +516,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily micro-Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily micro-Journal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneLine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneLine";
 			};
 			name = Debug;
 		};
@@ -488,7 +537,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily micro-Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily micro-Journal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneLine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneLine";
 			};
 			name = Release;
 		};
@@ -533,7 +582,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC6FA3C12F4C7C8400DCEE26 /* Build configuration list for PBXProject "Daily micro-Journal" */ = {
+		DC6FA3C12F4C7C8400DCEE26 /* Build configuration list for PBXProject "OneLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6FA3E72F4C7C8500DCEE26 /* Debug */,
@@ -542,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6FA3E92F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-Journal" */ = {
+		DC6FA3E92F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6FA3EA2F4C7C8500DCEE26 /* Debug */,
@@ -551,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6FA3EC2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-JournalTests" */ = {
+		DC6FA3EC2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6FA3ED2F4C7C8500DCEE26 /* Debug */,
@@ -560,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6FA3EF2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "Daily micro-JournalUITests" */ = {
+		DC6FA3EF2F4C7C8500DCEE26 /* Build configuration list for PBXNativeTarget "OneLineUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6FA3F02F4C7C8500DCEE26 /* Debug */,

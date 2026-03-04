@@ -1,13 +1,13 @@
 //
-//  Daily_micro_JournalUITestsLaunchTests.swift
-//  Daily micro-JournalUITests
+//  OneLineUITestsLaunchTests.swift
+//  OneLineUITests
 //
 //  Created by Carlos Hernandez Prieto on 23/2/26.
 //
 
 import XCTest
 
-final class Daily_micro_JournalUITestsLaunchTests: XCTestCase {
+final class OneLineUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
