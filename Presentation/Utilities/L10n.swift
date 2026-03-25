@@ -41,6 +41,8 @@ enum L10n {
     
     static let commonOK = String(localized: "common.ok")
     static let commonError = String(localized: "common.error")
+    static let commonDelete = String(localized: "common.delete")
+    static let commonCancel = String(localized: "common.cancel")
     
     // MARK: - Errors with Parameters
     
@@ -53,4 +55,11 @@ enum L10n {
         String(localized: "error.unknown", defaultValue: "Unexpected error: \(message)")
             .replacingOccurrences(of: "%@", with: message)
     }
+    
+    // MARK: - Entry List
+
+    static let entryListTitle = String(localized: "entry_list.title")
+    static let entryListEmpty = String(localized: "entry_list.empty")
+    static let entryListEmptySubtitle = String(localized: "entry_list.empty_subtitle")
+    static let entryListDeleteConfirmation = String(localized: "entry_list.delete_confirmation")
 }

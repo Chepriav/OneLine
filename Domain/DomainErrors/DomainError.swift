@@ -13,7 +13,6 @@ enum DomainError: Error, LocalizedError, Equatable {
     case textTooLong(maxLength: Int)
     case futureDate
     case entryNotFound
-    case entryAlreadyExistsToday
     
     var errorDescription: String? {
         switch self {
@@ -28,9 +27,6 @@ enum DomainError: Error, LocalizedError, Equatable {
             
         case .entryNotFound:
             return String(localized: "error.entry_not_found")
-            
-        case .entryAlreadyExistsToday:
-            return String(localized: "error.entry_already_exists_today")
         }
     }
 }

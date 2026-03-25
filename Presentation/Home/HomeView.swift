@@ -1,16 +1,10 @@
-//
-//  HomeView.swift
-//  OneLine
-//
-//  Created by Carlos Hernandez Prieto on 25/2/26.
-//
-
-import Foundation
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
     
-    @Bindable private var viewModel: HomeViewModel
+    @State private var viewModel: HomeViewModel
+    @Environment(\.modelContext) private var modelContext  // ← NUEVO
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
@@ -33,7 +27,7 @@ struct HomeView: View {
                     )
                     
                     PrimaryButton(
-                        L10n.buttonSave,  // ← Localizado
+                        L10n.buttonSave,
                         isLoading: viewModel.isLoading,
                         isEnabled: viewModel.canSave
                     ) {
@@ -46,12 +40,21 @@ struct HomeView: View {
                 }
                 .padding(DSSpacing.medium)
             }
-            .navigationTitle(L10n.homeTitle)  // ← Localizado
+            .navigationTitle(L10n.homeTitle)
             .navigationBarTitleDisplayMode(.large)
-            .alert(L10n.commonError, isPresented: $viewModel.showError) {  // ← Localizado
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        EntryListView(viewModel: makeEntryListViewModel())
+                    } label: {
+                        Image(systemName: "list.bullet")
+                    }
+                }
+            }
+            .alert(L10n.commonError, isPresented: $viewModel.showError) {
                 Button(L10n.commonOK, role: .cancel) { }
             } message: {
-                Text(viewModel.errorMessage ?? L10n.errorUnknown(message: ""))
+                Text(viewModel.errorMessage ?? "")
             }
             .overlay {
                 if viewModel.showSuccess {
@@ -63,14 +66,30 @@ struct HomeView: View {
     
     private var header: some View {
         VStack(spacing: DSSpacing.small) {
-            Text(L10n.homeHeader)  // ← Localizado
+            Text(L10n.homeHeader)
                 .font(DSTypography.title)
                 .foregroundColor(DSColors.textPrimary)
             
-            Text(L10n.homeSubtitle)  // ← Localizado
+            Text(L10n.homeSubtitle)
                 .font(DSTypography.body)
                 .foregroundColor(DSColors.textSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    // MARK: - Factory Methods
+    
+    @MainActor
+    private func makeEntryListViewModel() -> EntryListViewModel {
+        let dataSource = LocalSwiftDataSource(modelContext: modelContext)  // ← Usa @Environment
+        let repository = DayEntryRepositoryImpl(dataSource: dataSource)
+        
+        let fetchUseCase = FetchAllEntriesUseCase(repository: repository)
+        let deleteUseCase = DeleteDayEntryUseCase(repository: repository)
+        
+        return EntryListViewModel(
+            fetchUseCase: fetchUseCase,
+            deleteUseCase: deleteUseCase
+        )
     }
 }
